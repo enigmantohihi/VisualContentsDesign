@@ -4,6 +4,13 @@ html, body {
     padding: 0;
 }
 
+.logo-img {
+    width: 20%;
+    height: 50px;
+    object-fit: cover;
+    position: absolute;
+}
+
 .header-img {
     width: 100%;
     height: 180px;
@@ -12,6 +19,7 @@ html, body {
 
 ul.ddmenu {
     width: 100%;
+    height: 50px;
     margin: 0px;
     padding: 0px 0px 0px 0px;
     background-color: #06d48f;
@@ -30,7 +38,7 @@ ul.ddmenu li {
 ul.ddmenu a {
     background-color: #00cc88;
     color: white;
-    line-height: 40px;
+    line-height: 50px;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -56,6 +64,27 @@ ul.ddmenu li:hover ul {
 .container {
     margin: 10px auto;
     width: 90%;
+}
+
+.start {
+    text-align: center;
+}
+
+.start img {
+    width: 60%;
+    height: 280px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.start div {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.start p {
+    margin: 0 auto;
+    text-align: left;
 }
 
 .content {
@@ -204,4 +233,10 @@ footer {
     background: rgb(60, 60, 60);
     color: #fff;
     text-align: center;
+}
+
+.footer-logo-img {
+    width: 20%;
+    height: 50px;
+    object-fit: cover;
 }
