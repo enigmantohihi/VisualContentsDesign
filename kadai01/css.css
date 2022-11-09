@@ -6,6 +6,8 @@ html, body {
 
 .logo-img {
     width: 20%;
+    max-width: 200px;
+    min-width: 150px;
     height: 50px;
     object-fit: cover;
     position: absolute;
@@ -13,12 +15,14 @@ html, body {
 
 .header-img {
     width: 100%;
+    min-width: 854px;
     height: 180px;
     object-fit: cover;
 }
 
 ul.ddmenu {
     width: 100%;
+    min-width: 854px;
     height: 50px;
     margin: 0px;
     padding: 0px 0px 0px 0px;
@@ -73,6 +77,7 @@ ul.ddmenu li:hover ul {
 .start img {
     width: 60%;
     height: 280px;
+    min-width: 300px;
     object-fit: cover;
     margin: 0 auto;
 }
@@ -92,25 +97,39 @@ ul.ddmenu li:hover ul {
     margin: 0px auto;
 }
 
-.content-flex {
-    display: flex;
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    .content-flex {
+        display: block;
+    }
 }
+
+@media screen and (min-width: 751px) and (max-width: 2000px){
+    .content-flex {
+        display: flex;
+    }
+}
+
 
 .content-img-back {
     width: 60%;
+    min-width: 300px;
     background-color: #eec841;
+    margin: 0 auto;
 }
 
 .content-img {
     display: block;
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     height: 200px;
     object-fit: cover;
 }
 
 .content-detail {
     width: 40%;
+    min-width: 150px;
+    height: 60px;
+    margin: auto auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,7 +141,7 @@ ul.ddmenu li:hover ul {
 }
 
 .content-detail-button {
-    height: 30%;
+    height: 100%;
     width: 80%;
     margin: 0 auto;
     background-color: #eec841;
@@ -158,10 +177,24 @@ ul.ddmenu li:hover ul {
     
 }
 
-.menu-row {
-    display: flex;
-    margin-bottom: 10px;
+.menuBox h2{
+    text-align: center;
 }
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    .menu-row {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 2000px){
+    .menu-row {
+        display: flex;
+        margin-bottom: 10px;
+    }
+}
+
 
 .menu {
     width: 100%;
@@ -176,14 +209,22 @@ ul.ddmenu li:hover ul {
 
 .menu-img-back {
     width: 100%;
-    background-color: #eec841;
+    background-color: #3c3c3c;
 }
 
 .menu-img {
     display: block;
+    width: 90%;
+    margin: auto;
+    height: 240px;
+    object-fit: cover;
+}
+
+.menu-img-liquor {
+    display: block;
     width: 80%;
     margin: auto;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -201,21 +242,35 @@ ul.ddmenu li:hover ul {
     margin: 2px 0 2px;
 }
 
-.kodawari-flex {
-    display: flex;
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    .kodawari-flex {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
+
+@media screen and (min-width: 751px) and (max-width: 2000px){
+    .kodawari-flex {
+        display: flex;
+    }
+}
+
+/* .kodawari-flex {
+    display: flex;
+} */
 
 .kodawari-img-back {
     width: 50%;
+    height: 300px;
     background-color: #eec841;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 auto;
 }
 
 .kodawari-img {
     display: block;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     height: 300px;
     object-fit: cover;
 }
@@ -225,6 +280,7 @@ ul.ddmenu li:hover ul {
     text-align: center;
     vertical-align: middle;
     line-height: 40px;
+    margin: 0 auto;
 }
 
 footer {
@@ -237,6 +293,8 @@ footer {
 
 .footer-logo-img {
     width: 20%;
+    min-width: 150px;
+    max-width: 200px;
     height: 50px;
     object-fit: cover;
 }
