@@ -181,6 +181,7 @@ ul.ddmenu li:hover ul {
     text-align: center;
 }
 
+/* 横幅が750px以下 */
 @media screen and (min-width: 0px) and (max-width: 750px) {
     .menu-row {
         display: block;
@@ -188,7 +189,8 @@ ul.ddmenu li:hover ul {
     }
 }
 
-@media screen and (min-width: 751px) and (max-width: 2000px){
+/* 横幅が751px以上 */
+@media screen and (min-width: 751px){
     .menu-row {
         display: flex;
         margin-bottom: 10px;
