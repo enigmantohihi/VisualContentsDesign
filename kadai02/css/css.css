@@ -21,6 +21,36 @@ body {
     background-size: cover;
 }
 
-.row div img {
+.topImg {
+    height: 350px;
     width: 100%;
+    object-fit: cover;
+}
+
+.menuImgBack {
+
+}
+
+.menuImg {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menuImg2 {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.modalImg {
+    width: 100%;
+}
+
+.footerLogo {
+    background: url("../img/logo.png") center no-repeat;
+    background-size: cover;
+    height: 45px;
+    width: 60px;
+    margin: 0 auto;
 }

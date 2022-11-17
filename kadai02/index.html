@@ -11,9 +11,9 @@
     <script src="./js/bootstrap.js"></script>
     <script src="./js/js.js"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark mt-0 mb-0">
-        <a class="navbar-brand" href="#"></a>
+<body style="padding-top: 4.5rem">
+    <nav class="navbar navbar-expand navbar-dark bg-dark mt-0 mb-0 fixed-top">
+        <a class="navbar-brand" href="./index.html"></a>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -23,7 +23,7 @@
               <a class="nav-link" href="./index.html#menu">メニュー</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">こだわり</a>
+              <a class="nav-link" href="./index.html#kodawari">こだわり</a>
             </li>
           </ul>
         </div>
@@ -77,48 +77,124 @@
         </div>
         <div class="container">
             <div id="top">
-                <h1 class="text-center">イタリアンCITへようこそ</h1>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 mb-5 order-md-1">
-                        <img src="./img/gaikan.jpg" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-5 order-md-2">
-                        <h3 class="text-center">おしゃれな雰囲気</h3>
-                        <p class="text-center">
-                            あああ
-                            いいい
-                            ううう
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-5 order-md-4">
-                        <img src="./img/gaikan.jpg" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-6 mb-5 order-md-3">
-                        <h3 class="text-center">おしゃれな雰囲気</h3>
-                        <p class="text-center">
-                            あああ
-                            いいい
-                            ううう
-                        </p>
-                    </div>
-                    
-                </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h1 class="text-center">TOP</h1>
+              <hr>
+              <h2 class="text-center">イタリアンCITへようこそ</h2>
+              <div class="row">
+                  <div class="col-sm-12 col-md-6 mb-5 order-md-1">
+                      <img src="./img/gaikan.jpg" alt="" class="topImg">
+                  </div>
+                  <div class="col-sm-12 col-md-6 mb-5 order-md-2">
+                      <h3 class="text-center">おしゃれな雰囲気</h3>
+                      <p class="text-center">
+                          あああ
+                          いいい
+                          ううう
+                      </p>
+                  </div>
+                  <div class="col-sm-12 col-md-6 mb-5 order-md-4">
+                      <img src="./img/gaikan.jpg" alt="" class="topImg">
+                  </div>
+                  <div class="col-sm-12 col-md-6 mb-5 order-md-3">
+                      <h3 class="text-center">おしゃれな雰囲気</h3>
+                      <p class="text-center">
+                          あああ
+                          いいい
+                          ううう
+                      </p>
+                  </div>
+                  
+              </div>
             </div>
             <div id="menu">
-                <h2 class="text-center">メニュー</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-5">1
+              <br>
+              <br>
+              <br>
+              <br>
+              <h1 class="text-center">メニュー</h1>
+              <hr>
+              <h2 class="text-center">メイン</h2>
+              <div class="row" id="menuRowMain">
+                  <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col">
+                      <img src="./img/アヒージョ.jpg" alt="" class="menuImg">
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5">2</div>
-                    <div class="col-md-6 col-lg-4 mb-5">3</div>
-                    <div class="col-md-6 col-lg-4 mb-5">4</div>
-                    <div class="col-md-6 col-lg-4 mb-5">5</div>
-                    <div class="col-md-6 col-lg-4 mb-5">6</div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-5">
+                    <img src="./img/tomato.jpg" alt="" class="menuImg">
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-5">3</div>
+                  <div class="col-md-6 col-lg-4 mb-5">4</div>
+                  <div class="col-md-6 col-lg-4 mb-5">5</div>
+                  <div class="col-md-6 col-lg-4 mb-5">6</div>
+                  <div class="col-md-6 col-lg-4 mb-5">7</div>
+              </div>
 
-                </div>
+              <hr>
+
+              <h2 class="text-center">酒</h2>
+              <div class="row" id="menuRowLiquor">
+                  <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col">
+                      <img src="./img/アヒージョ.jpg" alt="" class="menuImg">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-5">
+                    <img src="./img/tomato.jpg" alt="" class="menuImg">
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-5">3</div>
+                  <div class="col-md-6 col-lg-4 mb-5">4</div>
+                  <div class="col-md-6 col-lg-4 mb-5">5</div>
+              </div>
             </div>
+
+            <!-- Modal -->
+            <div id="modalParent">
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="./img/アヒージョ.jpg" alt="" class="modalImg">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="kodawari">
+              <br>
+              <br>
+              <br>
+              <br>
+              <h1 class="text-center">こだわり</h1>
+              <hr>
+              <h2 class="text-center"></h2>
+            </div>
+            
         </div>
     </main>
-    <footer></footer>
+
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4">
+        <div class="mb-4">
+          <p>
+            イタリアン CIT
+          </p>
+        </div>
+        <div class="footerLogo" ></div>
+      </div>
+    </footer>
+
 </body>
 </html>
