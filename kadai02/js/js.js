@@ -24,6 +24,18 @@ const menuList = [
         "tag":"main"
     },
     {
+        "name":"ガーリックトースト",
+        "img":"./img/to-suto.jpg",
+        "price":500,
+        "tag":"main"
+    },
+    {
+        "name":"パテドカンパーニュ",
+        "img":"./img/patedo.jpg",
+        "price":900,
+        "tag":"main"
+    },
+    {
         "name":"クラフトビール",
         "img":"./img/beer01.jpg",
         "price":500,
@@ -86,7 +98,7 @@ function outputJSON(jsonList){
                                 '</div>' +
                             '</div>' +
                             '<div class="col-sm-12 col-md-4">' +
-                                '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal' + id + '">show</button>' + 
+                                '<button type="button" class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal' + id + '">show</button>' + 
                             '</div>' +
                         '</div>' +
                     '</div>' +
